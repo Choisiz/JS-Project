@@ -1,26 +1,59 @@
+@import "reset.css";
+
+:root {
+  --color--black: #2c3e50;
+  --color--white: #e9edf1;
+  --color--gray: #7f8c8d;
+  --margin: 30px;
+  --font-size: 20px;
+}
+
+html,
 body {
-  background-color: #2c3e50;
+  height: 100%;
+  width: 100%;
+  color: var(--color--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.btn {
-  cursor: pointer;
+.js-clock {
+  font-size: 10em;
+  margin-bottom: var(--margin);
 }
 
-body {
-  color: #e9edf1;
-}
-
-.clicked {
-  color: #7f8c8d;
+span {
+  color: var(--color--black);
+  font-size: var(--font-size);
 }
 
 .form,
 .greetings {
+  margin-bottom: var(--margin);
   display: none;
+}
+.js-toDoForm {
+  margin-bottom: var(--margin);
+}
+.js-weather {
+  color: var(--color--black);
+  font-size: var(--font-size);
+}
+
+input {
+  appearance: none;
+  background: none;
+  border: none;
+  color: var(--color--white);
+  font-size: 36px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.8);
 }
 
 .showing {
   display: block;
+  font-size: 50px;
 }
 
 @keyframes fadeIn {
